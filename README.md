@@ -28,4 +28,35 @@ Comprobamos que se ha realizado correctamente al abrir la página web que muestr
 
 ![Imagen](img/c5.PNG "Imagen")
 
-Ahora procederemos con la instalacion del MARIADB. Para ello tenem
+Ahora procederemos con la instalacion del MariaDB. Para ello tenememos que comenzar la instalación del servidor de base de datos y del cliente con el siguiente comando.
+
+``` 
+apt install -y mariadb-server mariadb-client
+```
+
+Una vez instalado, accedemos a MariaDB desde la consola del servidor con el usuario de root.
+
+![Imagen](img/c6.PNG "Imagen")
+
+Cunado nos hayamos logeado con el usuario root, tenemos que cambiar la contraseña de dicho usuario de la siguiente manera.
+
+![Imagen](img/c7.PNG "Imagen")
+
+Con esto ya tendremos instalado MariaDB, por lo que solo nos falta PHPMyAdmin para tener instalados todos los programas necesarios para tener la pila LAMP al completo.  
+Primero comenzamos instalándonos PHPMyAdmin en nuestra máquina virtual con el siguiente comando.
+
+``` 
+apt install phpmyadmin php-mbstring php-zip php-gd php-json php-curl -y 
+
+```
+Durante la instalación tenemos que seleccionar la siguiente configuración para realizarla correctamente.
+
+![Imagen](img/c8.PNG "Imagen")
+
+Con esto iniciará la instalación y nos pedirá confirmar que si que deseamos utilizar dbconfig-common para configurar la base de datos. A continuación nos pedirá introducir una contraseña para phpMyAdmin, la cual será **alumno222**.  
+
+Con esto ya podremos acceder a phpMyAdmin desde un navegador mediante el DNS de Ipv4 pública que nos ofrece AWS completándolo con un */phpmyadmin*. Se nos abrirá una página de inicio donde pondremos nuestro usuario y contraseña que creamos en MariaDB.
+
+![Imagen](img/c9.PNG "Imagen")
+
+Con esto completado ya habremos instalado la pila LAMP completamente en nuestra máquina virtual de AWS.
