@@ -59,4 +59,22 @@ Con esto ya podremos acceder a phpMyAdmin desde un navegador mediante el DNS de 
 
 ![Imagen](img/c9.PNG "Imagen")
 
-Con esto completado ya habremos instalado la pila LAMP completamente en nuestra máquina virtual de AWS.
+Con esto completado ya habremos instalado la pila LAMP completamente en nuestra máquina virtual de AWS. Solo falta hacer la instalación del adminer, para ello buscamos en Google Adminer y descargamos el fichero de Adminer for MySQL.
+
+![Imagen](img/c10.PNG "Imagen")
+
+Con esto volvemos a nuestro servidor y copiamos la dirección de descarga del enlace y lo instalamos en el servidor.
+
+![Imagen](img/c11.PNG "Imagen")
+
+Comprobamos que se ha instalado y lo movemos a la carpeta **/var/www/html**. Una vez movido le cambiamos el nombre a *adminer.php*.
+
+![Imagen](img/c12.PNG "Imagen")
+
+Por último iniciamos sesión en la base de datos poniendo nuestra ip pública con un */adminer.php*
+
+![Imagen](img/c13.PNG "Imagen")
+
+Una vez hecho esto solo falta mostrar que nos podemos conectar al servidor correctamente con la ip pública.
+
+![Imagen](img/c14.PNG "Imagen")
