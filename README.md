@@ -78,3 +78,7 @@ Por último iniciamos sesión en la base de datos poniendo nuestra ip pública c
 Una vez hecho esto solo falta mostrar que nos podemos conectar al servidor correctamente con la ip pública.
 
 ![Imagen](img/c14.PNG "Imagen")
+
+Por último creamos el archivo **index.php** que tiene el siguiente contenido.
+
+![Imagen](img/c15.PNG "Imagen")
